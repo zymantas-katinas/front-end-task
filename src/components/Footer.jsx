@@ -1,11 +1,13 @@
 import React from 'react';
+import FooterNav from './FooterNav'
 
 function Footer() {
     return (
 
-        <div>
-            Footer
-        </div>
+        <footer className ="footer">
+            <FooterNav />
+            Copyright
+        </footer>
 
     )
 }

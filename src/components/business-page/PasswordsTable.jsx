@@ -1,13 +1,13 @@
 import React from 'react';
 
-function Header() {
+function PasswordsTable() {
     return (
 
         <div>
-            Header
+            PasswordsTable
         </div>
         
     )
 }
 
-export default Header
+export default PasswordsTable

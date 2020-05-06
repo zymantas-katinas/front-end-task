@@ -3,9 +3,9 @@ import React from 'react';
 function Menu() {
     return (
 
-        <div className = "navbar__menu">
+        <nav className = "navbar__menu">
             Menu
-        </div>
+        </nav>
 
     )
 }

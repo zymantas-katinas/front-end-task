@@ -1,0 +1,65 @@
+.App {
+    max-width: 600px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// business page components
+
+.getStarted {
+    border-top: 3px solid black;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__heading-block {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.passwords {
+    border-top: 3px solid black;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq {
+    border-top: 3px solid black;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    border-top: 3px solid black;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.footer {
+    border-top: 3px solid black;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
