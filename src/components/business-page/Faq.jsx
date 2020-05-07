@@ -5,7 +5,7 @@ function Faq() {
     return (
 
         <div className = "faq">
-            <h3 className="heading"> Faq Heading </h3>
+            <h3 className="heading">Frequently asked questions</h3>
             <Question />
         </div>
         

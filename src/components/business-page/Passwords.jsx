@@ -1,17 +1,18 @@
 import React from 'react';
-import PasswordsTable from './PasswordsTable';
+import PasswordsList from './PasswordsList';
 
 function Passwords() {
     return (
 
         <div className = "passwords">
-            <h3 className="heading">passwords Header</h3>
-            <div> 
-                password
-                <input></input>
+            <h3 className="heading">Top leaked passwords</h3>
+            <div className = "passwords__table-headers"> 
+                <div className = "passwords__title">   Password </div>
+                <div className = "passwords__count">   Count </div>
+            
             </div>
-            <PasswordsTable />
-            <button>button</button>
+            <PasswordsList />
+            <button>Show all(x)</button>
         </div>
         
     )

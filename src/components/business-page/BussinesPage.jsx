@@ -7,7 +7,7 @@ import Contact from './Contact';
 function BusinessPage() {
     return (
 
-        <div>
+        <div className= "container">
             <GetStarted />
             <Passwords />
             <Faq />

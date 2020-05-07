@@ -2,11 +2,15 @@ import React from 'react';
 
 function Question() {
     return (
-
-        <div className="faq__question">
-            question 
-            answer
+        <div>
+            <div className="faq__question">
+                Why should you use a password manager for business?        
+            </div>
+            <div>
+                answer
+            </div>
         </div>
+    
         
     )
 }

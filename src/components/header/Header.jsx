@@ -1,14 +1,16 @@
 import React from 'react';
-import Logo from './Logo';
+import { ReactComponent as Logo } from '../../Assets/images/nordpass-logo.svg'
 import Navbar from './Navbar';
 
 function Header() {
     return (
 
-        <feader className = "header">
-            <Logo />
-            <Navbar />
-        </feader>
+        <header className = "header">
+            <div className = "header__bar container">
+                <Logo />
+                <Navbar />
+            </div>
+        </header>
 
     )
 }

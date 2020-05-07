@@ -4,9 +4,9 @@ import FooterNav from './FooterNav'
 function Footer() {
     return (
 
-        <footer className ="footer">
+        <footer className ="footer container">
             <FooterNav />
-            Copyright
+            Copyright © 2020 NordPass.com 
         </footer>
 
     )

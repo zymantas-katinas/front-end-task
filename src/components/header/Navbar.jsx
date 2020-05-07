@@ -3,8 +3,16 @@ import React from 'react';
 function Menu() {
     return (
 
-        <nav className = "navbar__menu">
-            Menu
+        <nav className = "header__nav">
+            <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Apps</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>My Account</li>
+                <li>Open Vault</li>
+            </ul> 
         </nav>
 
     )

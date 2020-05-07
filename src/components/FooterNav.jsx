@@ -4,8 +4,12 @@ function Footer() {
     return (
 
         <footer>
+            <p>ENGAGE</p>
             <nav>
-                foot nav
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Service</li>
+                </ul>
             </nav>
         </footer>
 
