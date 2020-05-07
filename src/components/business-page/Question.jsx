@@ -1,14 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { ReactComponent as Arrow } from '../../Assets/images/arrow.svg'
 
-function Question() {
+function Question(props) {
+    const [active, setActive] = useState(true);
+    const [expand, setExpand] = useState("collapsed");
+
+
+    const handleClick = (e) => {
+       if(active){
+
+             setExpand("expanded");
+             setActive(false) ;
+       } else {
+            setExpand("collapsed")
+            setActive(true)
+       }
+    }
 
     return (
-        <div>
+        <div onClick = {handleClick} className = {expand}  >
             <div className="faq__question">
-                Why should you use a password manager for business?        
+               {props.question}   
+               <div className="faq__arrow"><Arrow /> </div>
             </div>
-            <div>
-                answer
+            <div className="faq__answer">
+                {props.answer}  
             </div>
         </div> 
     )

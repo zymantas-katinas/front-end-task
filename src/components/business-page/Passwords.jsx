@@ -11,7 +11,6 @@ function Passwords() {
                 <div className = "passwords__count">   Count </div>           
             </div>
              <PasswordsList />
-            <button>Show all(x)</button>
         </div>
     )
 }

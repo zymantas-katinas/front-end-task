@@ -162,6 +162,7 @@ body {
 
 .passwords__list {
   width: 100%;
+  text-align: center;
 }
 
 .passwords__list-row {
@@ -190,6 +191,28 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.faq .collapsed {
+  cursor: pointer;
+  height: 56px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  overflow: hidden;
+}
+
+.faq__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq__arrow {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 .contact {
@@ -230,5 +253,25 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.expanded {
+  height: 100%;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  cursor: pointer;
+}
+
+.faq__answer {
+  opacity: 0;
+}
+
+.expanded .faq__answer {
+  opacity: 1;
+}
+
+.expanded .faq__arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */

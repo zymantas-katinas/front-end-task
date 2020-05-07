@@ -55,6 +55,7 @@
     }
     &__list {
         width: 100%;
+        text-align: center;
     }
     &__list-row {
         display:flex;
@@ -66,10 +67,22 @@
 .faq {
     border-top: 3px solid black;
     padding: 20px 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    .collapsed {
+        cursor: pointer;
+        height: 56px;
+        transition: all .2s ease-out;
+        overflow: hidden;
+    }
+    &__question {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__arrow {
+        transition: all .2s ease-out;
+    }
 }
 
 .contact {
