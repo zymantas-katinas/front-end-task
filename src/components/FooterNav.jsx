@@ -1,8 +1,8 @@
 import React from 'react';
 
 function Footer() {
-    return (
 
+    return (
         <footer>
             <p>ENGAGE</p>
             <nav>
@@ -12,7 +12,6 @@ function Footer() {
                 </ul>
             </nav>
         </footer>
-
     )
 }
 

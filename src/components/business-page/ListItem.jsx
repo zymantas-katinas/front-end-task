@@ -1,13 +1,12 @@
 import React from 'react';
 
-function ListItem() {
+function ListItem(props) {
+    
     return (
-
         <li className="passwords__list-row">
-            <div className="passwords__list-password"> qwerty </div>
-            <div className="passwords__list-count"> 100</div>
+            <div className="passwords__list-password">{props.value}</div>
+            <div className="passwords__list-count">{props.count}</div>
         </li>
-        
     )
 }
 

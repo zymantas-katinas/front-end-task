@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Question() {
+
     return (
         <div>
             <div className="faq__question">
@@ -9,9 +10,7 @@ function Question() {
             <div>
                 answer
             </div>
-        </div>
-    
-        
+        </div> 
     )
 }
 

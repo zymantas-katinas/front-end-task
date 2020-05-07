@@ -2,13 +2,12 @@ import React from 'react';
 import Question from './Question'
 
 function Faq() {
-    return (
 
+    return (
         <div className = "faq">
             <h3 className="heading">Frequently asked questions</h3>
             <Question />
-        </div>
-        
+        </div>  
     )
 }
 
