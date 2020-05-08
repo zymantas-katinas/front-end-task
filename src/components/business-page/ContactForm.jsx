@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { ReactComponent as AlertIcon } from '../../Assets/images/alert.svg'
 
-const ContactForm= () => {
+const ContactForm = () => {
   const firstNameRender = useRef(true)
   const firstEmailRender = useRef(true)
 
@@ -54,24 +55,30 @@ const ContactForm= () => {
 
   return (
     <form onSubmit={ handleSave } >
-      
-        <input
+        <p>Fill out your details, and we will get back to you shortly:</p>
+        <div>   
+          <input
             type      = "text"
             name      = "nameInput"
             value     = { nameInput }
             placeholder= "Name"
             onChange  = { e => setNameInput(e.target.value) }
-        />
-        { nameError && <p>{nameError}</p> }
-
-        <input
-            type      = "text"
-            name      = "emailInput"
-            placeholder= "Email"
-            value     = { emailInput }
-            onChange  = { e => setEmailInput(e.target.value) }
-        />
-        { emailError && <p>{emailError}</p> }
+            style = {nameError !== null ? {border: "1px solid rgb(246, 79, 100)"} : null}
+          />
+          { nameError && <div className = "contact__error"><AlertIcon /><p>{nameError}</p></div> }
+        </div>
+   
+        <div> 
+          <input
+              type      = "text"
+              name      = "emailInput"
+              placeholder= "Email"
+              value     = { emailInput }
+              onChange  = { e => setEmailInput(e.target.value) }
+              style = {emailError !== null ? {border: "1px solid rgb(246, 79, 100)"} : null}
+          />
+         { emailError && <div className = "contact__error"><AlertIcon /><p>{emailError}</p></div> }
+        </div>
 
         <textarea
           name="message"
@@ -80,7 +87,7 @@ const ContactForm= () => {
         ></textarea>
          
         <p>This information will be used by NordPass to respond to your inquiry as provided in our Privacy Policy.</p>
-        <button type="submit" disabled={disable} >Get Started</button>
+        <button className = "button-medium" type="submit" disabled={disable} >Get Started</button>
 
     </form>
   )

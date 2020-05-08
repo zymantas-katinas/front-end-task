@@ -11,7 +11,7 @@ function Menu() {
                 <li>Blog</li>
                 <li>Help</li>
                 <li>My Account</li>
-                <li>Open Vault</li>
+                <button className ="button-small">Open Vault</button>
             </ul> 
         </nav>
 

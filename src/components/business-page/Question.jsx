@@ -3,16 +3,16 @@ import { ReactComponent as Arrow } from '../../Assets/images/arrow.svg'
 
 function Question(props) {
     const [active, setActive] = useState(true);
-    const [expand, setExpand] = useState("collapsed");
+    const [expand, setExpand] = useState("faq__row collapsed");
 
 
     const handleClick = (e) => {
        if(active){
 
-             setExpand("expanded");
+             setExpand("faq__row expanded");
              setActive(false) ;
        } else {
-            setExpand("collapsed")
+            setExpand("faq__row collapsed")
             setActive(true)
        }
     }

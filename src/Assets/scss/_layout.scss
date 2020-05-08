@@ -6,13 +6,12 @@
     padding-left: 16px;
 }
 
-.App {
-    padding-top: 56px;
-}
-
 .header {
     position: fixed;
-    top: 16px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    transition: all .5s ease-in-out;
     width: 100%;
     &__bar {
         display: flex;
@@ -23,28 +22,49 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        li {
+            padding: 0 12px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
 }
 
-// business page components
-
 .getStarted {
-    border-top: 3px solid black;
-    padding: 20px 0;
-
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    padding-top: 145px;
+    &__background {
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        top: 0;
+        z-index: -1;
+        &-teal {
+            height: 80%;
+            background-color: $tealLightest;
+        }
+        &-gradient {
+            height: 20%;
+            position: relative;
+            background: linear-gradient(180deg, $tealLightest 0%, #FFFFFF 100%);
+        }
+    }
     &__heading-block {
         display: flex;
         flex-direction: column;
+        padding-bottom: 80px;
+        & .heading {
+            margin-bottom: 36px;
+            width: 38vw;
+        }
     }
 }
 
 .passwords {
-    border-top: 3px solid black;
-    padding: 20px 0;
-
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,45 +77,99 @@
         width: 100%;
         text-align: center;
     }
-    &__list-row {
+    &__list-item {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
     }
+    &__list-row {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__list-password {
+        padding-left: 12px;
+    }
+    &__count {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+    }
+    &__arrow {
+        display: flex;
+        align-items: center;
+        transition: all .2s ease-out;
+    }
+    & hr {
+        margin: 24px 0;
+    }
+    & .heading {
+        margin-bottom: 60px;
+    }
 }
 
 .faq {
-    border-top: 3px solid black;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 96px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading {
+        margin-bottom: 60px;
+    }
     .collapsed {
-        cursor: pointer;
+
         height: 56px;
-        transition: all .2s ease-out;
         overflow: hidden;
     }
     &__question {
         display: flex;
         justify-content: space-between;
     }
-    &__arrow {
-        transition: all .2s ease-out;
+    &__row {
+        padding: 16px;
+        margin-bottom: 12px;
+        width: 750px;
+    }
+    &__answer {
+        padding: 16px 70px 0 0;
     }
 }
 
 .contact {
-    border-top: 3px solid black;
-    padding: 20px 0;
-
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
+    padding: 96px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
     &__row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .heading {
+        margin-bottom: 72px;
+    }
+    &__image {
+        position: relative;
+        right: 120px;
+    }
+    form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    button {
+        margin: 0;
     }
 }
 .footer {

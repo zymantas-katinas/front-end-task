@@ -1,0 +1,158 @@
+
+%button {
+    background: $teal;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    transition-duration: .25s;
+    width: fit-content;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+        border: 1px solid #347f7c;
+    }
+    &:hover {
+        background-color: #80cbc8;
+    }
+}
+
+.button-small {
+    @extend %button;
+    border-radius: 3px;
+    padding: 6px 15px;
+    margin: 0 14px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+}
+.button-medium {
+    @extend %button;
+    padding: 9px 20px;
+    margin-top: 60px;
+}
+
+.button-large {
+    @extend %button;
+    padding: 12px 24px;
+}
+
+.heading {
+    margin: 0 auto;
+    color: $grey;
+    font-weight: bold;
+}
+
+.header {
+    &__nav {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $greyDark;
+    }
+}
+
+.getStarted {
+    & .heading {
+        font-size: 48px;
+        line-height: 64px;
+        color: black;
+    }
+}
+
+.passwords {
+    & .heading {
+        font-size: 40px;
+        line-height: 53px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        color: $grey;
+    }
+    &__count {
+        font-size: 16px;
+        border: 1px solid #B9BABD;
+        color: $grey;
+        border-radius: 3px;
+        padding: 7px 15px;
+        cursor: pointer;
+    }
+    &__list-password {
+        font-weight: bold;
+        font-size: 16px;
+        color: $grey;
+    }
+    &__list-count {
+        font-size: 16px;
+        color: $grey;
+    }
+    & hr {
+        border: 0.5px solid $greyLight2;
+    }
+    & p {
+        font-size: 16px;
+        color: $grey;
+    }
+
+}
+
+.faq {
+    background-color: $greyLightest;
+    font-size: 16px;
+    color: $grey;
+    .heading {
+        font-size: 40px;
+    }
+    .collapsed {
+        transition: all .2s ease-out;
+        cursor: pointer;
+    }
+    &__arrow {
+        transition: all .2s ease-out;
+    }
+    &__row {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+    }
+    &__question {
+        font-weight: bold;
+    }
+    &__answer {
+        font-weight: normal;
+        line-height: 24px;
+        transition: all .2s ease-out;
+    }
+}
+.contact {
+    background-color: $tealLightest;
+    .heading {
+        font-size: 48px;
+    }
+    input {
+        color: $grey;
+        padding: 13px 16px;
+        border-radius: 3px;
+        border: 1px solid #B9BABD;
+        outline: none;
+        &:focus {
+            border: 1px solid rgb(119, 167, 255);
+        }
+    }
+    &__error {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $red;
+        font-weight: 500;
+        font-size: 12px;
+        padding-bottom: 20px;
+        p {
+            padding-left: 9px;
+        }
+    }
+}

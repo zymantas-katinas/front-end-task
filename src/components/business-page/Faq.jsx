@@ -22,8 +22,10 @@ function Faq() {
     
     return (
         <div className = "faq">
-            <h3 className="heading">Frequently asked questions</h3>
-            {allQuestions}
+            <div className = "faq__content container">
+                <h3 className="heading">Frequently asked questions</h3>
+                {allQuestions}
+            </div>
         </div>  
     )
 }
