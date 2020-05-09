@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className ="footer container">
             <FooterNav />
-            Copyright © 2020 NordPass.com 
+           <p className ="footer__copyright">Copyright © 2020 NordPass.com </p> 
         </footer>
     )
 }

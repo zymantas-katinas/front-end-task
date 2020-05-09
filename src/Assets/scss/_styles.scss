@@ -1,57 +1,18 @@
-
-%button {
-    background: $teal;
-    border-radius: 3px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    border: none;
-    transition-duration: .25s;
-    width: fit-content;
-    cursor: pointer;
-    &:focus {
-        outline: 0;
-        border: 1px solid #347f7c;
-    }
-    &:hover {
-        background-color: #80cbc8;
-    }
-}
-
-.button-small {
-    @extend %button;
-    border-radius: 3px;
-    padding: 6px 15px;
-    margin: 0 14px;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 20px;
-}
-.button-medium {
-    @extend %button;
-    padding: 9px 20px;
-    margin-top: 60px;
-}
-
-.button-large {
-    @extend %button;
-    padding: 12px 24px;
-}
-
-.heading {
-    margin: 0 auto;
-    color: $grey;
-    font-weight: bold;
-}
-
 .header {
     &__nav {
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
         color: $greyDark;
+        a {
+            @extend %transition;
+            &:hover {
+                color: $teal;
+            }
+        }
+    }
+    & a {
+        cursor: pointer;
     }
 }
 
@@ -60,8 +21,16 @@
         font-size: 48px;
         line-height: 64px;
         color: black;
+        letter-spacing: -0.35px;
+    }
+    &__background-teal {
+        background-color: $tealLightest;
+    }
+    &__background-gradient {
+        background: linear-gradient(180deg, $tealLightest 0%, #FFFFFF 100%);
     }
 }
+
 
 .passwords {
     & .heading {
@@ -97,7 +66,6 @@
         font-size: 16px;
         color: $grey;
     }
-
 }
 
 .faq {
@@ -128,12 +96,13 @@
         transition: all .2s ease-out;
     }
 }
+
 .contact {
     background-color: $tealLightest;
     .heading {
         font-size: 48px;
     }
-    input {
+    input, textarea {
         color: $grey;
         padding: 13px 16px;
         border-radius: 3px;
@@ -150,9 +119,47 @@
         color: $red;
         font-weight: 500;
         font-size: 12px;
-        padding-bottom: 20px;
+        padding-top: 12px;
         p {
             padding-left: 9px;
         }
     }
+    &__info-top {
+        font-size: 16px;
+        color: $grey;
+    }
+    &__info-bottom {
+        color: $greyDark;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        a {
+            color: $greyDark;
+        }
+    }
+}
+
+.footer {
+    &__copyright {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 13px;
+        color: $grey;
+    }
+    &__col-title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: $greyLight;
+    }
+    a {
+        @extend %transition;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: $grey;
+        &:hover {
+            color: $teal;
+        }
+    } 
 }

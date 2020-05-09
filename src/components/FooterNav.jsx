@@ -4,11 +4,11 @@ function Footer() {
 
     return (
         <footer>
-            <p>ENGAGE</p>
+            <p className ="footer__col-title">ENGAGE</p>
             <nav>
                 <ul>
-                    <li>Privacy Policy</li>
-                    <li>Terms Of Service</li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Terms Of Service</a></li>
                 </ul>
             </nav>
         </footer>

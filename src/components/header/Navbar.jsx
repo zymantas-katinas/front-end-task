@@ -1,17 +1,17 @@
 import React from 'react';
 
 function Menu() {
-    return (
 
+    return (
         <nav className = "header__nav">
             <ul>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Apps</li>
-                <li>Blog</li>
-                <li>Help</li>
-                <li>My Account</li>
-                <button className ="button-small">Open Vault</button>
+                <li><a>Features</a></li>
+                <li><a>Pricing</a></li>
+                <li><a>Apps</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Help</a></li>
+                <li><a>My Account</a></li>
+                <li><button className ="button-small">Open Vault</button></li>
             </ul> 
         </nav>
 

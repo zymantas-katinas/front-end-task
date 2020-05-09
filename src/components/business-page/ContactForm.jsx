@@ -9,9 +9,11 @@ const ContactForm = () => {
 
   const [nameError, setNameError] = useState(null)
   const [nameInput, setNameInput] = useState('')
+  const [nameValid, setNameValid] = useState(false)
 
   const [emailError, setEmailError] = useState(null)
   const [emailInput, setEmailInput] = useState('')
+  const [emailValid, setEmailValid] = useState(false)
 
   const [messageInput, setMessageInput] = useState('')
   
@@ -22,8 +24,17 @@ const ContactForm = () => {
     }
     if (nameInput === "") {
         setNameError('Name field cannot be empty')
+        setNameValid(false)
     } else {
         setNameError(null)
+        setNameValid(true)
+    }
+    const formValidation = () => {
+      if (nameValid && emailValid) {
+        return false
+      } else {
+        return true
+      }
     }
     setDisabled(formValidation())
   }, [nameInput])
@@ -34,20 +45,27 @@ const ContactForm = () => {
         return
     }
     if (emailInput === "") {
-        setEmailError('Email address cannot be empty')
-    } else {
-        setEmailError(null)
+      setEmailValid(false)
+      setEmailError('Email address cannot be empty')
+    } else if (! emailInput.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) ){
+      setEmailValid(false)
+      setEmailError('Email address must be valid')
+    }
+    else {
+      setEmailError(null)
+      setEmailValid(true)
+    }
+    const formValidation = () => {
+      if (nameValid && emailValid) {
+        return false
+      } else {
+        return true
+      }
     }
     setDisabled(formValidation())
   }, [emailInput])
 
-  const formValidation = () => {
-    if (nameInput === "" || emailInput === "") {
-      return true
-    } else {
-      return false
-    }
-  }
+ 
 
   const handleSave = () => {
    // submit
@@ -55,8 +73,8 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={ handleSave } >
-        <p>Fill out your details, and we will get back to you shortly:</p>
-        <div>   
+        <p className = "contact__info-top">Fill out your details, and we will get back to you shortly:</p>
+        <div className="contact__input">  
           <input
             type      = "text"
             name      = "nameInput"
@@ -68,7 +86,7 @@ const ContactForm = () => {
           { nameError && <div className = "contact__error"><AlertIcon /><p>{nameError}</p></div> }
         </div>
    
-        <div> 
+        <div className="contact__input"> 
           <input
               type      = "text"
               name      = "emailInput"
@@ -86,7 +104,7 @@ const ContactForm = () => {
           onChange  = { e => setMessageInput(e.target.value) }
         ></textarea>
          
-        <p>This information will be used by NordPass to respond to your inquiry as provided in our Privacy Policy.</p>
+        <p className = "contact__info-bottom" >This information will be used by NordPass to respond to your inquiry as provided in our <a href="">Privacy Policy.</a></p>
         <button className = "button-medium" type="submit" disabled={disable} >Get Started</button>
 
     </form>

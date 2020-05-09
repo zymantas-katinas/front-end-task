@@ -2,8 +2,8 @@
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 .header {
@@ -13,6 +13,7 @@
     height: 56px;
     transition: all .5s ease-in-out;
     width: 100%;
+    z-index: 10;
     &__bar {
         display: flex;
         flex-direction: row;
@@ -44,22 +45,25 @@
         z-index: -1;
         &-teal {
             height: 80%;
-            background-color: $tealLightest;
         }
         &-gradient {
             height: 20%;
             position: relative;
-            background: linear-gradient(180deg, $tealLightest 0%, #FFFFFF 100%);
+
         }
     }
     &__heading-block {
         display: flex;
         flex-direction: column;
         padding-bottom: 80px;
+        width: 100%;
         & .heading {
             margin-bottom: 36px;
-            width: 38vw;
         }
+    }
+    &__image {
+        position: relative;
+        left: 90px;
     }
 }
 
@@ -97,12 +101,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 250px;
     }
     &__arrow {
         display: flex;
         align-items: center;
         transition: all .2s ease-out;
+        padding-left: 10vw;
     }
     & hr {
         margin: 24px 0;
@@ -123,8 +127,6 @@
         margin-bottom: 60px;
     }
     .collapsed {
-
-        height: 56px;
         overflow: hidden;
     }
     &__question {
@@ -134,10 +136,14 @@
     &__row {
         padding: 16px;
         margin-bottom: 12px;
-        width: 750px;
+        width: 75%;
     }
     &__answer {
         padding: 16px 70px 0 0;
+    }
+    &__arrow {  
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -157,13 +163,16 @@
     }
     &__image {
         position: relative;
-        right: 120px;
+        right: 100px;
     }
-    form {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    &__form {
+        width: 100%;
+        form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
     input, textarea {
         width: 100%;
@@ -171,12 +180,20 @@
     button {
         margin: 0;
     }
+    &__info-top-over {
+        display: none;
+    }
 }
 .footer {
-    border-top: 3px solid black;
-    padding: 20px 0;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    padding: 72px 105px;
+    &__col-title {
+        padding-bottom: 4px;
+    }
+    li {
+        padding-top: 12px;
+    }
 }
