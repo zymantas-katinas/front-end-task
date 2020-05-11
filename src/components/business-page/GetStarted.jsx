@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../../Assets/images/np-hero-image.webp'
+import heroImg from '../../Assets/images/np-hero-image.png'
 
 function GetStarted() {
     

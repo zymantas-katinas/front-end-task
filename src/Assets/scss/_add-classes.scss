@@ -8,19 +8,20 @@
     transition: all .2s ease-out;
     transform: rotate(180deg);
 }
+
+.faq__answer {
+    opacity: 0;
+    max-height: 0px;
+    padding: 0 70px 0 0;
+}
 .expanded {
     height: 100%;
     transition: all .2s ease-out;
     cursor: pointer;
-}
-.faq__answer {
-    opacity: 0;
-    display: none;
-}
-.expanded {
     .faq__answer {
         opacity: 1;
-        display: block;
+        max-height: 1000px;
+        padding: 16px 70px 0 0;
     }
     .faq__arrow {
         transform: rotate(180deg);

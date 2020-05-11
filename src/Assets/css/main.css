@@ -327,7 +327,7 @@ html, body {
           align-items: center;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
-  padding-left: 10vw;
+  margin-left: 10vw;
 }
 
 .passwords hr {
@@ -498,7 +498,7 @@ html, body {
 }
 
 .getStarted .heading {
-  font-size: 48px;
+  font-size: 47px;
   line-height: 64px;
   color: black;
   letter-spacing: -0.35px;
@@ -852,6 +852,12 @@ html, body {
           transform: rotate(180deg);
 }
 
+.faq__answer {
+  opacity: 0;
+  max-height: 0px;
+  padding: 0 70px 0 0;
+}
+
 .expanded {
   height: 100%;
   -webkit-transition: all .2s ease-out;
@@ -859,14 +865,10 @@ html, body {
   cursor: pointer;
 }
 
-.faq__answer {
-  opacity: 0;
-  display: none;
-}
-
 .expanded .faq__answer {
   opacity: 1;
-  display: block;
+  max-height: 1000px;
+  padding: 16px 70px 0 0;
 }
 
 .expanded .faq__arrow {

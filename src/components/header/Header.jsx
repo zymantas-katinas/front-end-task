@@ -6,7 +6,17 @@ function Header() {
 
     const [ifScrolling, setIfScrolling] = useState("header")
     const [burger, setBurger] = useState("header__burger")
-    const [navbarExpanded, setNavbarExpanded] = useState(true)
+    const [navbarExpanded, setNavbarExpanded] = useState(false)
+
+    // show/hide navbar on screen width
+    useEffect(() => {
+        if(window.innerWidth < 1000){
+            setNavbarExpanded(false)
+        } else {
+            setNavbarExpanded(true)
+        }
+        console.log(window.innerWidth)
+    }, [])
 
     // hide background on scroll
     useEffect(()=> {
@@ -21,37 +31,25 @@ function Header() {
         window.addEventListener("scroll", onScroll);
     }, [])
 
-    // show navbar on window resize
-    useEffect(() => {
-        const onResize = () => {
-            const width = window.innerWidth;
-            if(width > 1000){
-                setNavbarExpanded(true)
-            } else if(width == 999) {
-                setNavbarExpanded(false)
-            }
-        }
-        window.addEventListener("resize", onResize);
-
-    }, [])
-
     // click burger to expand
     const handleClick = () => {
-        if(navbarExpanded){
-            setBurger("header__burger")
-            setNavbarExpanded(false)
-            const scrollPos = window.scrollY;
-            if(scrollPos > 0){
-                setIfScrolling("header scrolling")      
-            } else {
-                setIfScrolling("header") 
+        if(window.innerWidth < 1000){
+            if(navbarExpanded){
+                setBurger("header__burger")
+                setNavbarExpanded(false)
+                const scrollPos = window.scrollY;
+                if(scrollPos > 0){
+                    setIfScrolling("header scrolling")      
+                } else {
+                    setIfScrolling("header") 
+                }
             }
-        }
-        else {
-            setBurger("header__burger active")
-            setNavbarExpanded(true)
-            setIfScrolling("header scrolling") 
-        }
+            else {
+                setBurger("header__burger active")
+                setNavbarExpanded(true)
+                setIfScrolling("header scrolling") 
+            }
+        } 
     }
 
     return (

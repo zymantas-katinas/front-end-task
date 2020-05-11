@@ -14,7 +14,6 @@ function Menu() {
                 <li><button className ="button-small">Open Vault</button></li>
             </ul> 
         </nav>
-
     )
 }
 
