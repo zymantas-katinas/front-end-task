@@ -11,7 +11,7 @@ function Contact() {
                 <p className = "contact__info-top-over">Fill out your details, and we will get back to you shortly:</p>
                 <div className="contact__row">
                     <div className= "contact__image">
-                         <img src={contactImage} alt="contact-image" />
+                         <img src={contactImage} alt="contact" />
                     </div>
                     <div className= "contact__form">
                         <ContactForm />

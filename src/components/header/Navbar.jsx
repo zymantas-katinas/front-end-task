@@ -5,12 +5,12 @@ function Menu() {
     return (
         <nav className = "header__nav">
             <ul>
-                <li><a>Features</a></li>
-                <li><a>Pricing</a></li>
-                <li><a>Apps</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Help</a></li>
-                <li><a>My Account</a></li>
+                <li><a href="/">Features</a></li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Apps</a></li>
+                <li><a href="/">Blog</a></li>
+                <li><a href="/">Help</a></li>
+                <li><a href="/">My Account</a></li>
                 <li><button className ="button-small">Open Vault</button></li>
             </ul> 
         </nav>

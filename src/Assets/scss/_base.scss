@@ -1,18 +1,15 @@
-body {
-    font-family: 'Noto Sans TC', sans-serif;
-}
 html, body { 
+    font-family: 'Noto Sans TC', sans-serif;
     margin:0;
     padding:0;
     width:100%;
     overflow: auto;
-    }
-// colors 
+}
 
+// colors 
 $teal: #43A5A1;
 $tealLightest: #EDF8F7;
 $red: #F64F64;
-
 $greyDark: #151922;
 $grey: #383C43;
 $greyLight: #B9BABD;

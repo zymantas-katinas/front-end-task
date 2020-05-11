@@ -40,6 +40,11 @@ ul {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
 }
 
 img {

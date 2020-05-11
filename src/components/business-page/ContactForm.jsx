@@ -17,6 +17,7 @@ const ContactForm = () => {
 
   const [messageInput, setMessageInput] = useState('')
   
+  // name validation  
   useEffect(() => {
     if (firstNameRender.current) {
       firstNameRender.current = false
@@ -29,16 +30,9 @@ const ContactForm = () => {
         setNameError(null)
         setNameValid(true)
     }
-    const formValidation = () => {
-      if (nameValid && emailValid) {
-        return false
-      } else {
-        return true
-      }
-    }
-    setDisabled(formValidation())
   }, [nameInput])
 
+  // email validation  
   useEffect(() => {
     if (firstEmailRender.current) {
         firstEmailRender.current = false
@@ -55,6 +49,10 @@ const ContactForm = () => {
       setEmailError(null)
       setEmailValid(true)
     }
+  }, [emailInput])
+
+ // form validation
+  useEffect(() => {
     const formValidation = () => {
       if (nameValid && emailValid) {
         return false
@@ -63,9 +61,7 @@ const ContactForm = () => {
       }
     }
     setDisabled(formValidation())
-  }, [emailInput])
-
- 
+  }, [nameValid, emailValid])
 
   const handleSave = () => {
    // submit
@@ -74,6 +70,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={ handleSave } >
         <p className = "contact__info-top">Fill out your details, and we will get back to you shortly:</p>
+        
         <div className="contact__input">  
           <input
             type      = "text"
@@ -85,7 +82,7 @@ const ContactForm = () => {
           />
           { nameError && <div className = "contact__error"><AlertIcon /><p>{nameError}</p></div> }
         </div>
-   
+
         <div className="contact__input"> 
           <input
               type      = "text"
@@ -104,9 +101,8 @@ const ContactForm = () => {
           onChange  = { e => setMessageInput(e.target.value) }
         ></textarea>
          
-        <p className = "contact__info-bottom" >This information will be used by NordPass to respond to your inquiry as provided in our <a href="">Privacy Policy.</a></p>
+        <p className = "contact__info-bottom" >This information will be used by NordPass to respond to your inquiry as provided in our <a href="\">Privacy Policy.</a></p>
         <button className = "button-medium" type="submit" disabled={disable} >Get Started</button>
-
     </form>
   )
 }

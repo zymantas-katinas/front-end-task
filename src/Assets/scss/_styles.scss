@@ -11,9 +11,6 @@
             }
         }
     }
-    & a {
-        cursor: pointer;
-    }
 }
 
 .getStarted {
@@ -30,7 +27,6 @@
         background: linear-gradient(180deg, $tealLightest 0%, #FFFFFF 100%);
     }
 }
-
 
 .passwords {
     & .heading {
@@ -135,6 +131,7 @@
         line-height: 20px;
         a {
             color: $greyDark;
+            text-decoration: underline;
         }
     }
 }

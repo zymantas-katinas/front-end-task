@@ -15,7 +15,6 @@ function Header() {
         } else {
             setNavbarExpanded(true)
         }
-        console.log(window.innerWidth)
     }, [])
 
     // hide background on scroll

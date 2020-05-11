@@ -7,8 +7,8 @@ function Footer() {
             <p className ="footer__col-title">ENGAGE</p>
             <nav>
                 <ul>
-                    <li><a>Privacy Policy</a></li>
-                    <li><a>Terms Of Service</a></li>
+                    <li><a href = "/">Privacy Policy</a></li>
+                    <li><a href = "/">Terms Of Service</a></li>
                 </ul>
             </nav>
         </footer>

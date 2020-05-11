@@ -11,6 +11,7 @@ function PasswordsList() {
     const [accending, setAccending] = useState(true)
     const [rotate, setRotate] = useState("passwords__arrow")
     
+    // fetch passwords from an api
     useEffect(() => {
         const fetchData = async () => {
           const result = await axios(
@@ -26,10 +27,12 @@ function PasswordsList() {
         fetchData();
       }, []);
 
-      useEffect(() => {
-        setButtonText(`Show all(${passwords.length})`);
-      }, [passwords])
+    // change button text
+    useEffect(() => {
+      setButtonText(`Show all(${passwords.length})`);
+    }, [passwords])
     
+    // click button to show more/less
     const handleClick = () => {
       setShowItems(passwords.length)
       setButtonText('Show Less');
@@ -39,6 +42,7 @@ function PasswordsList() {
       }
     }
     
+    // sort array by count 
     const sortCount = () => {
       const sortedDesc = [...passwords].sort((a, b) => {
         return b.count - a.count;
@@ -65,11 +69,8 @@ function PasswordsList() {
         <div className ="passwords__list">
             <div className = "passwords__table-headers"> 
                 <div className = "passwords__title">   Password </div>
-                <div 
-                    className = "passwords__count"
-                    onClick = {sortCount}
-                >   
-                   Count 
+                <div  className = "passwords__count" onClick = {sortCount} >   
+                  Count 
                   <div className={rotate}><ArrowSort/></div>
                 </div>           
             </div>

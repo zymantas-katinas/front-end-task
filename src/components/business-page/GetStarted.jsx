@@ -16,7 +16,7 @@ function GetStarted() {
                     <button className ="button-large">Get started</button>
                     </div>
                     <div className = "getStarted__image">
-                        <img src={heroImg} alt="hero-image"/>
+                        <img src={heroImg} alt="hero"/>
                     </div>
                 </div>      
             </div>

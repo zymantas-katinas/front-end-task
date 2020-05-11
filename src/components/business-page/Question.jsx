@@ -5,10 +5,9 @@ function Question(props) {
     const [active, setActive] = useState(true);
     const [expand, setExpand] = useState("faq__row collapsed");
 
-
+    // click question to expand/collapse
     const handleClick = (e) => {
        if(active){
-
              setExpand("faq__row expanded");
              setActive(false) ;
        } else {

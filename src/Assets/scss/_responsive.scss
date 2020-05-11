@@ -11,6 +11,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -146,22 +147,15 @@
         }
     }
     .faq {
-        .heading {
-            font-size: 30px;
-        }
-    }
-    .contact {
-        .heading {
-            font-size: 30px;
-        }
-    }
-}
-
-@media only screen and (max-width: 600px) { 
-    .faq {
         padding: 96px 0 20px 0;
+        .heading {
+            font-size: 30px;
+        }
     }
     .contact {
+        .heading {
+            font-size: 30px;
+        }
         &__form {
             padding: 0 10px;
         }
