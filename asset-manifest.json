@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/front-end-task/static/css/main.f6eaa092.chunk.css",
+    "main.js": "/front-end-task/static/js/main.b9181e00.chunk.js",
+    "main.js.map": "/front-end-task/static/js/main.b9181e00.chunk.js.map",
+    "runtime-main.js": "/front-end-task/static/js/runtime-main.ea01e2a3.js",
+    "runtime-main.js.map": "/front-end-task/static/js/runtime-main.ea01e2a3.js.map",
+    "static/js/2.faf61832.chunk.js": "/front-end-task/static/js/2.faf61832.chunk.js",
+    "static/js/2.faf61832.chunk.js.map": "/front-end-task/static/js/2.faf61832.chunk.js.map",
+    "index.html": "/front-end-task/index.html",
+    "precache-manifest.93ef4b8e60b013c4368b4f64a88a6dc1.js": "/front-end-task/precache-manifest.93ef4b8e60b013c4368b4f64a88a6dc1.js",
+    "service-worker.js": "/front-end-task/service-worker.js",
+    "static/css/main.f6eaa092.chunk.css.map": "/front-end-task/static/css/main.f6eaa092.chunk.css.map",
+    "static/js/2.faf61832.chunk.js.LICENSE.txt": "/front-end-task/static/js/2.faf61832.chunk.js.LICENSE.txt",
+    "static/media/alert.c9740e73.svg": "/front-end-task/static/media/alert.c9740e73.svg",
+    "static/media/arrow-sort.0ca9794f.svg": "/front-end-task/static/media/arrow-sort.0ca9794f.svg",
+    "static/media/arrow.8e5b64ee.svg": "/front-end-task/static/media/arrow.8e5b64ee.svg",
+    "static/media/nordpass-logo.ac170fcd.svg": "/front-end-task/static/media/nordpass-logo.ac170fcd.svg",
+    "static/media/np-form-image.png": "/front-end-task/static/media/np-form-image.d3221164.png",
+    "static/media/np-hero-image.png": "/front-end-task/static/media/np-hero-image.0cc6b81f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea01e2a3.js",
+    "static/js/2.faf61832.chunk.js",
+    "static/css/main.f6eaa092.chunk.css",
+    "static/js/main.b9181e00.chunk.js"
+  ]
+}
