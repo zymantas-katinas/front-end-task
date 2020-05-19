@@ -1,162 +1,164 @@
 .header {
-    &__nav {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        color: $greyDark;
-        a {
-            @extend %transition;
-            &:hover {
-                color: $teal;
-            }
-        }
+  &__nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $greyDark;
+    a {
+      @extend %transition;
+      &:hover {
+        color: $teal;
+      }
     }
+  }
 }
 
 .getStarted {
-    & .heading {
-        font-size: 47px;
-        line-height: 64px;
-        color: black;
-        letter-spacing: -0.35px;
-    }
-    &__background-teal {
-        background-color: $tealLightest;
-    }
-    &__background-gradient {
-        background: linear-gradient(180deg, $tealLightest 0%, #FFFFFF 100%);
-    }
+  & .heading {
+    font-size: 47px;
+    line-height: 64px;
+    color: black;
+    letter-spacing: -0.35px;
+  }
+  &__background-teal {
+    background-color: $tealLightest;
+  }
+  &__background-gradient {
+    background: linear-gradient(180deg, $tealLightest 0%, #ffffff 100%);
+  }
 }
 
 .passwords {
-    & .heading {
-        font-size: 40px;
-        line-height: 53px;
-    }
-    &__title {
-        font-weight: bold;
-        font-size: 20px;
-        color: $grey;
-    }
-    &__count {
-        font-size: 16px;
-        border: 1px solid #B9BABD;
-        color: $grey;
-        border-radius: 3px;
-        padding: 7px 15px;
-        cursor: pointer;
-    }
-    &__list-password {
-        font-weight: bold;
-        font-size: 16px;
-        color: $grey;
-    }
-    &__list-count {
-        font-size: 16px;
-        color: $grey;
-    }
-    & hr {
-        border: 0.5px solid $greyLight2;
-    }
-    & p {
-        font-size: 16px;
-        color: $grey;
-    }
+  & .heading {
+    font-size: 40px;
+    line-height: 53px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    color: $grey;
+  }
+  &__count {
+    font-size: 16px;
+    border: 1px solid #b9babd;
+    color: $grey;
+    border-radius: 3px;
+    padding: 7px 15px;
+    cursor: pointer;
+  }
+  &__list-password {
+    font-weight: bold;
+    font-size: 16px;
+    color: $grey;
+  }
+  &__list-count {
+    font-size: 16px;
+    color: $grey;
+  }
+  & hr {
+    border: 0.5px solid $greyLight2;
+  }
+  & p {
+    font-size: 16px;
+    color: $grey;
+  }
 }
 
 .faq {
-    background-color: $greyLightest;
-    font-size: 16px;
-    color: $grey;
-    .heading {
-        font-size: 40px;
-    }
-    .collapsed {
-        transition: all .2s ease-out;
-        cursor: pointer;
-    }
-    &__arrow {
-        transition: all .2s ease-out;
-    }
-    &__row {
-        background: #FFFFFF;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 0px rgba(0, 0, 0, 0.05);
-        border-radius: 3px;
-    }
-    &__question {
-        font-weight: bold;
-    }
-    &__answer {
-        font-weight: normal;
-        line-height: 24px;
-        transition: all .2s ease-out;
-    }
+  background-color: $greyLightest;
+  font-size: 16px;
+  color: $grey;
+  .heading {
+    font-size: 40px;
+  }
+  .collapsed {
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+  }
+  &__arrow {
+    transition: all 0.2s ease-out;
+  }
+  &__row,
+  &__row-expanded {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+  }
+  &__question {
+    font-weight: bold;
+  }
+  &__answer {
+    font-weight: normal;
+    line-height: 24px;
+    transition: all 0.2s ease-out;
+  }
 }
 
 .contact {
-    background-color: $tealLightest;
-    .heading {
-        font-size: 48px;
+  background-color: $tealLightest;
+  .heading {
+    font-size: 48px;
+  }
+  input,
+  textarea {
+    color: $grey;
+    padding: 13px 16px;
+    border-radius: 3px;
+    border: 1px solid #b9babd;
+    outline: none;
+    &:focus {
+      border: 1px solid rgb(119, 167, 255);
     }
-    input, textarea {
-        color: $grey;
-        padding: 13px 16px;
-        border-radius: 3px;
-        border: 1px solid #B9BABD;
-        outline: none;
-        &:focus {
-            border: 1px solid rgb(119, 167, 255);
-        }
+  }
+  &__error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $red;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 12px;
+    p {
+      padding-left: 9px;
     }
-    &__error {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: $red;
-        font-weight: 500;
-        font-size: 12px;
-        padding-top: 12px;
-        p {
-            padding-left: 9px;
-        }
+  }
+  &__info-top {
+    font-size: 16px;
+    color: $grey;
+  }
+  &__info-bottom {
+    color: $greyDark;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    a {
+      color: $greyDark;
+      text-decoration: underline;
     }
-    &__info-top {
-        font-size: 16px;
-        color: $grey;
-    }
-    &__info-bottom {
-        color: $greyDark;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 20px;
-        a {
-            color: $greyDark;
-            text-decoration: underline;
-        }
-    }
+  }
 }
 
 .footer {
-    &__copyright {
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 13px;
-        color: $grey;
+  &__copyright {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    color: $grey;
+  }
+  &__col-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: $greyLight;
+  }
+  a {
+    @extend %transition;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: $grey;
+    &:hover {
+      color: $teal;
     }
-    &__col-title {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 20px;
-        color: $greyLight;
-    }
-    a {
-        @extend %transition;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 20px;
-        color: $grey;
-        &:hover {
-            color: $teal;
-        }
-    } 
+  }
 }

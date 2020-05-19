@@ -1,10 +1,10 @@
-import React from 'react';
-import './Assets/css/main.css';
-import Header from './components/header/Header';
-import BussinesPage from './components/business-page/BussinesPage';
-import Footer from './components/Footer';
+import React from "react"
+import "./Assets/css/main.css"
+import Header from "./components/header/Header.js"
+import BussinesPage from "./pages/BussinesPage.js"
+import Footer from "./components/footer/Footer.js"
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />

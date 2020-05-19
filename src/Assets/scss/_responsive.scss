@@ -1,163 +1,179 @@
-
 @media only screen and (max-width: 1400px) {
-    .getStarted {
-        &__image {
-            left: 30px
-        }
+  .getStarted {
+    &__image {
+      left: 30px;
     }
-    .contact {
-        &__image {
-            right: 60px;
-        }
+  }
+  .contact {
+    &__image {
+      right: 60px;
     }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .container {
-        max-width: 960px;
-        padding-right: 16px;
-        padding-left: 16px;
+  .container {
+    max-width: 960px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .getStarted {
+    .heading {
+      font-size: 34px;
+      line-height: 41px;
     }
-    .getStarted {
-        .heading {
-            font-size: 34px;
-            line-height: 41px;
-        }
-        &__image {
-            left: 0
-        }
+    &__image {
+      left: 0;
     }
-    .contact {
-        &__image {
-            right: 30px;
-        }
+  }
+  .contact {
+    &__image {
+      right: 30px;
     }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    .container {
-        max-width: 720px;
+  .container {
+    max-width: 720px;
+  }
+  .header {
+    height: auto;
+    &__bar {
+      flex-direction: column;
+      &-expanded {
+        display: block;
+      }
+      &-collapsed {
+        display: none;
+      }
     }
-    .header {
-        height: auto;
-        &__bar {
-            flex-direction: column;
-        }
-        &__nav {
-            ul {
-                flex-direction: column;
-                padding: 10px;
-            }
-            li {
-                margin-top: 30px;
-                font-size: 15px;
-            }
-            button {
-                font-size: 16px;
-                margin: 0 0 30px 0;
-            }
-        }
-        &__logo {
-            height: 56px;
-            display: flex;
-            align-items: center;
-            // position: relative;
-            justify-content: space-between;
-        }
-        &__burger {
-            margin: 1em;
-            width: 24px;
-            &:after,
-            &:before,
-            div {
-                background-color: $greyDark;
-                content: '';
-                display: block;
-                height: 3px;
-                margin: 4px 0;
-                transition: all .25s ease-in-out;
-            }
-        }
-    }
-
-    .heading {
-        text-align: center;
-    }
-    .getStarted {
+    &__nav {
+      ul {
         flex-direction: column;
-        .heading {
-            font-size: 39px;
-        }
-        &__heading-block {
-            align-items: center;
-        }
+        padding: 10px;
+      }
+      li {
+        margin-top: 30px;
+        font-size: 15px;
+      }
+      button {
+        font-size: 16px;
+        margin: 0 0 30px 0;
+      }
     }
-    .faq {
-        &__row {
-            width: 100%;
-        }
+    &__logo {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .contact {
-        .heading {
-            font-size: 39px;
+    &__burger {
+      margin: 1em;
+      width: 24px;
+      &:after,
+      &:before,
+      div {
+        background-color: $greyDark;
+        content: "";
+        display: block;
+        height: 3px;
+        margin: 4px 0;
+        transition: all 0.25s ease-in-out;
+      }
+      &-active {
+        @extend .header__burger;
+        &:after {
+          transform: translateY(-7px) rotate(-135deg);
         }
-        &__image {
-            right: 0;
-            margin-bottom: 20px;
+        &:before {
+          transform: translateY(7px) rotate(135deg);
         }
-        &__row {
-            flex-direction: column;
+        div {
+          opacity: 0;
         }
-        &__form {
-            align-items: center;
-            padding: 0 50px;
-            textarea {
-                margin-bottom: 10px;
-            }
-        }
-        &__input {
-            margin-bottom: 20px;
-        }
-        &__info-bottom {
-            margin-bottom: 20px;
-        }
+      }
+    }
+  }
 
-        &__info-top {
-            display: none;
-        }
-        &__info-top-over {
-            display: block;
-            text-align: center;
-        }
+  .heading {
+    text-align: center;
+  }
+  .getStarted {
+    flex-direction: column;
+    .heading {
+      font-size: 39px;
     }
+    &__heading-block {
+      align-items: center;
+    }
+  }
+  .faq {
+    &__row {
+      width: 100%;
+    }
+  }
+  .contact {
+    .heading {
+      font-size: 39px;
+    }
+    &__image {
+      right: 0;
+      margin-bottom: 20px;
+    }
+    &__row {
+      flex-direction: column;
+    }
+    &__form {
+      align-items: center;
+      padding: 0 50px;
+      textarea {
+        margin-bottom: 10px;
+      }
+    }
+    &__input {
+      margin-bottom: 20px;
+    }
+    &__info-bottom {
+      margin-bottom: 20px;
+    }
+
+    &__info-top {
+      display: none;
+    }
+    &__info-top-over {
+      display: block;
+      text-align: center;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 35px;
+  }
+  .getStarted {
     .heading {
-        font-size: 35px;
+      font-size: 30px;
     }
-    .getStarted {
-        .heading {
-            font-size: 30px;
-        }
+  }
+  .passwords {
+    .heading {
+      font-size: 30px;
     }
-    .passwords {
-        .heading {
-            font-size: 30px;
-        }
+  }
+  .faq {
+    padding: 96px 0 20px 0;
+    .heading {
+      font-size: 30px;
     }
-    .faq {
-        padding: 96px 0 20px 0;
-        .heading {
-            font-size: 30px;
-        }
+  }
+  .contact {
+    .heading {
+      font-size: 30px;
     }
-    .contact {
-        .heading {
-            font-size: 30px;
-        }
-        &__form {
-            padding: 0 10px;
-        }
+    &__form {
+      padding: 0 10px;
     }
+  }
 }

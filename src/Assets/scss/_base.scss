@@ -1,75 +1,76 @@
-html, body { 
-    font-family: 'Noto Sans TC', sans-serif;
-    margin:0;
-    padding:0;
-    width:100%;
-    overflow: auto;
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: auto;
 }
 
-// colors 
-$teal: #43A5A1;
-$tealLightest: #EDF8F7;
-$red: #F64F64;
+// colors
+$teal: #43a5a1;
+$tealLightest: #edf8f7;
+$red: #f64f64;
 $greyDark: #151922;
-$grey: #383C43;
-$greyLight: #B9BABD;
-$greyLight2:  #E8E8E9;
-$greyLightest: #F8F8F8;
+$grey: #383c43;
+$greyLight: #b9babd;
+$greyLight2: #e8e8e9;
+$greyLightest: #f8f8f8;
 
 %transition {
-    cursor: pointer;
-    transition-duration: .25s;
-    transition-timing-function: cubic-bezier(0,0,.2,1);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 %button {
-    @extend %transition;
-    background: $teal;
-    border-radius: 3px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    border: none;
-    width: fit-content;
-    cursor: pointer;
-    &:focus {
-        outline: 0;
-        border: 1px solid #347f7c;
-    }
-    &:hover {
-        background-color: #80cbc8;
-    }
-    &:disabled {
-        background-color: $greyLight2;
-        color: $greyLight;
-    }
+  @extend %transition;
+  background: $teal;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+    border: 1px solid #347f7c;
+  }
+  &:hover {
+    background-color: #80cbc8;
+  }
+  &:disabled {
+    background-color: $greyLight2;
+    color: $greyLight;
+  }
 }
 
 .button-small {
-    @extend %button;
-    border-radius: 2px;
-    padding: 6px 15px;
-    margin: 0 14px;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 20px;
+  @extend %button;
+  border-radius: 2px;
+  padding: 6px 15px;
+  margin: 0 14px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .button-medium {
-    @extend %button;
-    padding: 9px 20px;
-    margin-top: 60px;
+  @extend %button;
+  padding: 9px 20px;
+  margin-top: 60px;
 }
 
 .button-large {
-    @extend %button;
-    padding: 12px 24px;
+  @extend %button;
+  padding: 12px 24px;
 }
 
 .heading {
-    margin: 0 auto;
-    color: $grey;
-    font-weight: bold;
+  margin: 0 auto;
+  color: $grey;
+  font-weight: bold;
 }
