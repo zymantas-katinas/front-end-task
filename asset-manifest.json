@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/front-end-task/static/css/main.b97934b9.chunk.css",
-    "main.js": "/front-end-task/static/js/main.f9c5ea4a.chunk.js",
-    "main.js.map": "/front-end-task/static/js/main.f9c5ea4a.chunk.js.map",
+    "main.css": "/front-end-task/static/css/main.0fbd0e87.chunk.css",
+    "main.js": "/front-end-task/static/js/main.10233ca4.chunk.js",
+    "main.js.map": "/front-end-task/static/js/main.10233ca4.chunk.js.map",
     "runtime-main.js": "/front-end-task/static/js/runtime-main.ea01e2a3.js",
     "runtime-main.js.map": "/front-end-task/static/js/runtime-main.ea01e2a3.js.map",
-    "static/js/2.faf61832.chunk.js": "/front-end-task/static/js/2.faf61832.chunk.js",
-    "static/js/2.faf61832.chunk.js.map": "/front-end-task/static/js/2.faf61832.chunk.js.map",
+    "static/js/2.513dc7b6.chunk.js": "/front-end-task/static/js/2.513dc7b6.chunk.js",
+    "static/js/2.513dc7b6.chunk.js.map": "/front-end-task/static/js/2.513dc7b6.chunk.js.map",
     "index.html": "/front-end-task/index.html",
-    "precache-manifest.04392e8d6475715633d71252cd567837.js": "/front-end-task/precache-manifest.04392e8d6475715633d71252cd567837.js",
+    "precache-manifest.1b945f6971cac55421e7c88c9b2a78c6.js": "/front-end-task/precache-manifest.1b945f6971cac55421e7c88c9b2a78c6.js",
     "service-worker.js": "/front-end-task/service-worker.js",
-    "static/css/main.b97934b9.chunk.css.map": "/front-end-task/static/css/main.b97934b9.chunk.css.map",
-    "static/js/2.faf61832.chunk.js.LICENSE.txt": "/front-end-task/static/js/2.faf61832.chunk.js.LICENSE.txt",
+    "static/css/main.0fbd0e87.chunk.css.map": "/front-end-task/static/css/main.0fbd0e87.chunk.css.map",
+    "static/js/2.513dc7b6.chunk.js.LICENSE.txt": "/front-end-task/static/js/2.513dc7b6.chunk.js.LICENSE.txt",
     "static/media/alert.c9740e73.svg": "/front-end-task/static/media/alert.c9740e73.svg",
     "static/media/arrow-sort.0ca9794f.svg": "/front-end-task/static/media/arrow-sort.0ca9794f.svg",
     "static/media/arrow.8e5b64ee.svg": "/front-end-task/static/media/arrow.8e5b64ee.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ea01e2a3.js",
-    "static/js/2.faf61832.chunk.js",
-    "static/css/main.b97934b9.chunk.css",
-    "static/js/main.f9c5ea4a.chunk.js"
+    "static/js/2.513dc7b6.chunk.js",
+    "static/css/main.0fbd0e87.chunk.css",
+    "static/js/main.10233ca4.chunk.js"
   ]
 }
